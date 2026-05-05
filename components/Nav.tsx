@@ -29,25 +29,36 @@ export default function Nav() {
           </span>
         </div>
 
-        <nav className="flex gap-1">
-          {links.map((link) => {
-            const active = pathname.startsWith(link.href);
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="px-4 py-1.5 rounded-md text-sm font-medium transition-colors"
-                style={{
-                  background: active ? "var(--accent)" : "transparent",
-                  color: active ? "#ffffff" : "var(--muted)",
-                  fontWeight: active ? 700 : 500,
-                }}
-              >
-                {link.label}
-              </Link>
-            );
-          })}
-        </nav>
+        <div className="flex items-center gap-3">
+          <nav className="flex gap-1">
+            {links.map((link) => {
+              const active = pathname.startsWith(link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="px-4 py-1.5 rounded-md text-sm font-medium transition-colors"
+                  style={{
+                    background: active ? "var(--accent)" : "transparent",
+                    color: active ? "#ffffff" : "var(--muted)",
+                    fontWeight: active ? 700 : 500,
+                  }}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
+          <a
+            href="http://fourhourfreedom.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-1.5 rounded-md text-sm font-semibold transition-colors"
+            style={{ background: "var(--accent)", color: "#ffffff" }}
+          >
+            Subscribe ↗
+          </a>
+        </div>
       </div>
     </header>
   );
