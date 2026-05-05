@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  /* Digital Drift brand colours */
+  --background: #112937;
+  --foreground: #ffffff;
+  --card: #1a3f50;
+  --card-border: #0f2d3c;
+  --muted: #7ba8b8;
+  --accent: #d2782d;
+  --accent-secondary: #3c6978;
+  --accent-green: #5a9e6f;
+  --accent-red: #e05c5c;
+  --accent-amber: #d2782d;
+  --gradient-start: #d2782d;
+  --gradient-end: #e8a045;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
