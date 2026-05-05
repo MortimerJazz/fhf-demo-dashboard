@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/financial", label: "Financial" },
-  { href: "/marketing", label: "Marketing" },
 ];
 
 export default function Nav() {
@@ -56,7 +55,7 @@ export default function Nav() {
             className="px-4 py-1.5 rounded-md text-sm font-semibold transition-colors"
             style={{ background: "var(--accent)", color: "#ffffff" }}
           >
-            Subscribe ↗
+            Subscribe to Four Hour Freedom ↗
           </a>
         </div>
       </div>

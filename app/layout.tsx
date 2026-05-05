@@ -15,6 +15,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-8">
           {children}
         </main>
+        <footer className="max-w-7xl mx-auto w-full px-6 py-6 flex items-center justify-between" style={{ borderTop: "1px solid var(--card-border)" }}>
+          <span className="text-xs" style={{ color: "var(--muted)" }}>Four Hour Freedom · Demo Dashboard · Data shown is illustrative only</span>
+          <a
+            href="http://fourhourfreedom.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-semibold"
+            style={{ color: "var(--accent)" }}
+          >
+            Subscribe to the newsletter ↗
+          </a>
+        </footer>
       </body>
     </html>
   );

@@ -201,7 +201,7 @@ export default function FinancialDashboard() {
 
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-bold">Financial Dashboard</h1>
+        <h1 className="text-2xl font-bold">Financial Dashboard — Demo Data</h1>
         <p className="text-sm mt-1" style={{ color: "var(--muted)" }}>FY 2026/27 · Apr 2026 – Mar 2027 · UK tax year</p>
       </div>
 
@@ -373,7 +373,7 @@ export default function FinancialDashboard() {
                 <span className="text-xs px-2 py-0.5 rounded" style={{ background: "var(--card-border)", color: "var(--muted)" }}>Q1 Apr–Jun</span>
               </div>
               <p className="text-2xl font-bold" style={{ color: "var(--accent)" }}>{fmt(taxPots.vat)}</p>
-              <p className="text-xs mt-1" style={{ color: "var(--muted)" }}>Current balance · next return due Aug 2026 · verify liability with GMBC</p>
+              <p className="text-xs mt-1" style={{ color: "var(--muted)" }}>Current balance · next return due Aug 2026 · verify liability with your accountant</p>
             </div>
 
             {/* Corp Tax pot */}
